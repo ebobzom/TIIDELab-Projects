@@ -1,0 +1,38 @@
+*, ::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: larger;
+    background-color: rgb(213, 213, 223);
+}
+
+.container{
+    /* background: blue; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timers{
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: underline;
+    color: black;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    padding: 2px;
+    background-color: rgb(172, 172, 226);
+}
