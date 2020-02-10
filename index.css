@@ -1,38 +1,77 @@
-*, ::before,::after{
-    box-sizing: border-box;
+.home-img {
+    background: url('./coding.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    background-color: #866c86;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-body{
-    font-size: larger;
-    background-color: rgb(213, 213, 223);
-}
-
-.container{
-    /* background: blue; */
-    width: 80%;
-    margin: 0 auto;
-}
-
-.timers{
-    font-size: larger;
-    font-weight: 600;
-    text-decoration: underline;
-    color: black;
-    padding: 5px;
-}
-
-h1{
+.banner {
     text-align: center;
-    color: blue;
+    background: #866c86;
+    /* opacity: 0.8; */
+    display: inline-block;
+    padding: 2rem;
 }
 
-li, a{
-    list-style-type: none;
-    text-decoration: none;
-    color: blue;
+.banner-title {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a:hover{
-    padding: 2px;
-    background-color: rgb(172, 172, 226);
+em {
+    font-size: 50px;
+}
+
+span {
+    font-family: 'Zhi Mang Xing',
+        cursive;
+    font-size: 18px;
+}
+
+h5 {
+    font-weight: bold;
+    font-family: 'Lobster',
+        cursive;
+}
+
+@media only screen and (max-width : 320px) {
+
+    .banner-title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+}
+
+.banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    background: transparent;
+    color: var(--primaryColor);
 }
